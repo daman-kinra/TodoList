@@ -1,0 +1,127 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container
+{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(100deg, rgb(117, 35, 113), rgb(209, 105, 105));
+}
+.header
+{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+.content
+{
+    display: flex;
+}
+.btn
+{
+    height: 80px; 
+    position: absolute;
+    min-height: 100vh;
+    top: 0;
+    margin-left: 310px;
+    
+}
+.h
+{
+    color: rgb(226, 81, 24);
+}
+.icon
+{
+    /* margin-left: 300px; */
+    margin-top: 98px; 
+    background: none;
+    border: 0ch; 
+    height: 40px;
+    width: 30px;
+}
+.input
+{
+    height: 40px;
+    width: 350px;
+    z-index: 1;
+}
+input
+{
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 25px;
+    background-color: azure; 
+}
+.todo
+{
+    display: flex;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 300px;
+    justify-content: space-between;
+    height: 40px;
+    background-color: azure;
+    border: 2px solid;
+    border-radius: 7px;
+    animation: fall 0.7s ease;
+}
+.todo-item
+{
+    flex: 1;
+    list-style: none;
+    font-size: 30px;
+    color: rgb(19, 61, 61);
+    margin-left: 6px;
+}
+.compl
+{
+    text-decoration:line-through ;
+    opacity: 0.5;
+}
+.deled
+{
+    animation: drop 1s ease;
+}
+button
+{
+    border: none;
+}
+.fa-trash,
+.fa-check
+{
+    pointer-events: none;
+}
+.fall-animate
+{
+    animation: drop 1s ease;
+}
+@keyframes fall{
+    0%{
+        opacity: 0;
+        margin-top: -20px;
+    }
+    100%
+    {
+        opacity: 1;
+        margin-top: 15px;
+    }
+}
+@keyframes drop{
+    0%
+    {
+        opacity: 1;
+        margin-top: 0px;
+    }
+    100%
+    {
+        opacity: 0;
+        margin-top: 20%;
+    }
+}
